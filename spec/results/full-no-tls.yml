@@ -1,4 +1,5 @@
 exodus:
+  bosh: full-no-tls
   external_url: https://concourse.testing.examle
   mode: full
   password: <!{meta.vault}/webui:password!>
@@ -138,9 +139,9 @@ instance_groups:
 name: full-no-tls-concourse
 releases:
 - name: concourse
-  sha1: e464cb907d7436a43f712b71d6dbde0fdce4be6d
-  url: https://bosh.io/d/github.com/concourse/concourse-bosh-release?v=7.3.2
-  version: 7.3.2
+  sha1: af1af947e61a50a9828e0120fb4366c4ef56b01a
+  url: https://bosh.io/d/github.com/concourse/concourse-bosh-release?v=7.5.0
+  version: 7.5.0
 - name: slack-notification-resource
   sha1: a64c65d1f23ea089746e698f29dbe522dd716c1b
   url: https://bosh.io/d/github.com/cloudfoundry-community/slack-notification-resource-boshrelease?v=9
@@ -154,13 +155,13 @@ releases:
   url: https://github.com/cloudfoundry-community/locker-boshrelease/releases/download/v0.2.1/locker-0.2.1.tgz
   version: 0.2.1
 - name: haproxy
-  sha1: e20b88e04d28d7d349078180602eae6e9f95c281
-  url: https://bosh.io/d/github.com/cloudfoundry-incubator/haproxy-boshrelease?v=11.4.3
-  version: 11.4.3
+  sha1: 032585069510727d13a6591583f28a0aa06fed3c
+  url: https://bosh.io/d/github.com/cloudfoundry-incubator/haproxy-boshrelease?v=11.5.0
+  version: 11.5.0
 - name: bpm
-  sha1: 82322898b2393951108617caac43752e498632a2
-  url: https://bosh.io/d/github.com/cloudfoundry/bpm-release?v=1.1.13
-  version: 1.1.13
+  sha1: 6e1187b180c3d8e6d3dafa2861147a59d4ede27e
+  url: https://bosh.io/d/github.com/cloudfoundry/bpm-release?v=1.1.14
+  version: 1.1.14
 stemcells:
 - alias: default
   os: ubuntu-xenial
